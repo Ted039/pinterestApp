@@ -1,0 +1,55 @@
+.userButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    
+}
+
+.loginButtonLink {
+    padding: 16px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+.loginButtonLink:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.userButton .arrowDropdown {
+   cursor: pointer;
+   width: 16px;
+    height: 16px;
+}
+.userButton img {
+    width: 27px;
+    height: 27px;
+    border: 100%;
+    object-fit: cover;
+}
+.userOptions {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.userOption{
+    padding: 8px 0;
+    cursor: pointer;
+}
+.userOption:hover {
+    background-color: #f1f1f1;
+    color: #00000073;
+}
+
+@media( max-width: 475px){
+    .userButton{
+        display: none;
+    }
+}
