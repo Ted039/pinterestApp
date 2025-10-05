@@ -1,6 +1,6 @@
 import React from 'react'
 import './galleryItem.css'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import Image from '../image/image'
 
 function GalleryItem({item}) {
