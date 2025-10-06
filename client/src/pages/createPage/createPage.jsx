@@ -15,7 +15,7 @@ function CreatePage() {
             <span>Choose a file</span>
           </div>
           <div className="uploadInfo">
-            we recommend using high-quality .jpg files less than 20MB.
+            We recommend using high-quality .jpg files less than 20MB.
           </div>
           
         </div>
