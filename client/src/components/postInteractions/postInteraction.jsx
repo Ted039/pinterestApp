@@ -1,6 +1,6 @@
 import React from 'react'
 import './postInteraction.css'
-import Image from '../image/image'
+import Image from '../../components/image/Image'
 
 function PostInteraction() {
   return (

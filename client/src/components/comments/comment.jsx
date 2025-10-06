@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './comment.css'
-import Image from '../image/image'
+import Image from '../../components/image/Image'
+
+
+import EmojiPicker from 'emoji-picker-react';
 
 function Comment() {
+    const [open, setOpen] =useState(false);
   return (
     <div className="comments">
         <div className="commentList">
@@ -43,6 +47,30 @@ function Comment() {
             <div className="comment">
                 <Image path="/general/noAvatar.png" alt="User" />
                 <div className="commentDetails">
+                    <span className="commentAuthor">Bob Brown</span>
+                    <p className="commentText">Thanks for sharing.</p>
+                    <span className="commentTime">15 minutes ago</span>
+                </div>
+            </div>
+            <div className="comment">
+                <Image path="/general/noAvatar.png" alt="User" />
+                <div className="commentDetails">
+                    <span className="commentAuthor">Bob Brown</span>
+                    <p className="commentText">Thanks for sharing.</p>
+                    <span className="commentTime">15 minutes ago</span>
+                </div>
+            </div>
+            <div className="comment">
+                <Image path="/general/noAvatar.png" alt="User" />
+                <div className="commentDetails">
+                    <span className="commentAuthor">Bob Brown</span>
+                    <p className="commentText">Thanks for sharing.</p>
+                    <span className="commentTime">15 minutes ago</span>
+                </div>
+            </div>
+            <div className="comment">
+                <Image path="/general/noAvatar.png" alt="User" />
+                <div className="commentDetails">
                     <span className="commentAuthor">Charlie Davis</span>
                     <p className="commentText">Interesting read.</p>
                     <span className="commentTime">5 minutes ago</span>
@@ -52,7 +80,11 @@ function Comment() {
         <form className="commentForm">
             <input type="text" placeholder='Add a comment' />
             <div className="emoji">
-                <div>🙂</div>
+                <div onClick={()=> setOpen((prev => !prev))}>🙂</div>
+                {open && <div className="emojiPicker">
+                    <EmojiPicker />
+                </div>}
+
             </div>
         </form>
     </div>

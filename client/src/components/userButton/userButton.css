@@ -15,14 +15,15 @@
     background-color: #f1f1f1;
     cursor: pointer;
 }
-.userButton .arrowDropdown {
-   cursor: pointer;
-   width: 16px;
+.userButton .arrowDown {
+    cursor: pointer;
+    width: 16px;
     height: 16px;
 }
 .userButton img {
     width: 27px;
     height: 27px;
+    cursor: pointer;
     border: 100%;
     object-fit: cover;
 }

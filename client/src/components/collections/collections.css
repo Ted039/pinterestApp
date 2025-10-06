@@ -1,0 +1,31 @@
+.collections{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 16px;
+    
+}
+.collection{
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.collectInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.collectInfo span{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+.collectInfo h1{
+    font-size: 16px;
+    font-weight: 600;
+}

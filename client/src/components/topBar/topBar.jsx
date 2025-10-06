@@ -1,7 +1,7 @@
 import React from 'react'
 import './topBar.css'
 import UserButton from '../userButton/userButton'
-import Image from '../image/image'
+import Image from '../../components/image/Image'
 
 function TopBar() {
   return (

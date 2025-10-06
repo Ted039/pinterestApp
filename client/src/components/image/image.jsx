@@ -1,7 +1,7 @@
 import React from 'react'
 import { IKImage } from 'imagekitio-react';
 
-function Image({path, alt, className, w, h}) {
+function Image({path, alt, className, w, h, onClick}) {
   return (
     <div>
         <IKImage
@@ -17,6 +17,7 @@ function Image({path, alt, className, w, h}) {
         lqip={{ active: true, quality: 20 }}
         alt={alt}
         className={className}
+        onClick={onClick}
         />
     </div>
   )

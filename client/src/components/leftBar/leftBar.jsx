@@ -1,6 +1,6 @@
 import React from 'react'
 import './leftBar.css'
-import Image from '../image/image'
+import Image from '../image/Image'
 
 function LeftBar() {
   return (

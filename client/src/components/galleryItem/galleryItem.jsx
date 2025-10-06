@@ -1,7 +1,9 @@
 import React from 'react'
 import './galleryItem.css'
 import { Link } from 'react-router-dom'
-import Image from '../image/image'
+import Image from '../image/Image'
+
+
 
 function GalleryItem({item}) {
   const height = (372 * item.height) / item.width;

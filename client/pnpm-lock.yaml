@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      emoji-picker-react:
+        specifier: ^4.14.0
+        version: 4.14.0(react@19.1.1)
       imagekitio-react:
         specifier: ^4.3.0
         version: 4.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -672,6 +675,12 @@ packages:
   electron-to-chromium@1.5.228:
     resolution: {integrity: sha512-nxkiyuqAn4MJ1QbobwqJILiDtu/jk14hEAWaMiJmNPh1Z+jqoFlBFZjdXwLWGeVSeu9hGLg6+2G9yJaW8rBIFA==}
 
+  emoji-picker-react@4.14.0:
+    resolution: {integrity: sha512-HYqNhvbhYWonp/ArIDcbElTlwPHC3g59CVPDVPt5DgfOOKIyabKIucVODBslul3+5r+rnmH22LrTk0SlWiqRfg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+
   es-abstract@1.24.0:
     resolution: {integrity: sha512-WSzPgsdLtTcQwm4CROfS5ju2Wa1QQcVeT37jFjYzdFz1r9ahadC8B8/a4qxJxM+09F18iumCdRmlr96ZYkQvEg==}
     engines: {node: '>= 0.4'}
@@ -801,6 +810,9 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
+
+  flairup@1.0.0:
+    resolution: {integrity: sha512-IKlE+pNvL2R+kVL1kEhUYqRxVqeFnjiIvHWDMLFXNaqyUdFXQM2wte44EfMYJNHkW16X991t2Zg8apKkhv7OBA==}
 
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
@@ -2015,6 +2027,11 @@ snapshots:
 
   electron-to-chromium@1.5.228: {}
 
+  emoji-picker-react@4.14.0(react@19.1.1):
+    dependencies:
+      flairup: 1.0.0
+      react: 19.1.1
+
   es-abstract@1.24.0:
     dependencies:
       array-buffer-byte-length: 1.0.2
@@ -2264,6 +2281,8 @@ snapshots:
     dependencies:
       locate-path: 6.0.0
       path-exists: 4.0.0
+
+  flairup@1.0.0: {}
 
   flat-cache@4.0.1:
     dependencies:
