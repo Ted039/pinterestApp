@@ -1,31 +1,32 @@
 import React from 'react'
 import './leftBar.css'
 import Image from '../image/Image'
+import { Link } from 'react-router-dom'
 
 function LeftBar() {
   return (
     <div className='leftBar'>
       <div className="menuIcons">
           <Image path="/general/logo.png" alt="/" className="logo"/>
-        <a href="/" className="menuIcon">
-        </a>
-        <a href="/" className="menuIcon">
+        <Link to="/" className="menuIcon">
+        </Link>
+     <Link to="/" className="menuIcon">
           <Image path="/general/home.svg" alt="/" />
-        </a>
-        <a href="/" className="menuIcon">
+        </Link>
+     <Link to="create" className="menuIcon">
           <Image path="/general/create.svg" alt="/" />
-        </a>
-        <a href="/" className="menuIcon">
+        </Link>
+     <Link to="/" className="menuIcon">
           <Image path="/general/updates.svg" alt="/" />
-        </a>
-        <a href="/" className="menuIcon">
+        </Link>
+     <Link to="/" className="menuIcon">
           <Image path="/general/messages.svg" alt="/"/>
-        </a>
-      </div>
-      <a href="/" className="menuIcon">
+        </Link>
+   </div>
+      <Link to="/" className="menuIcon">
           <Image path="/general/settings.svg" alt="/" />
-        </a>
-    </div>
+        </Link>
+ </div>
   )
 }
 
